@@ -25,3 +25,16 @@ VALUES
     (14, 'Cutlery Set', 'Kitchen Supplies', 34.50, 40, 4.4),
     (15, 'Cozy Throw Blanket', 'Furnishings', 24.99, 100, 4.2);
 
+#For this project, I used SQL to query the Superstore Database to find information about the price and the item id
+
+
+SELECT price
+from superstore
+ORDER BY item_id
+
+SELECT MAX(price)
+from superstore;
+
+SELECT MAX(price)
+from superstore
+WHERE category="furnishings";
